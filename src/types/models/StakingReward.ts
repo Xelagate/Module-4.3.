@@ -20,6 +20,8 @@ export class StakingReward implements Entity {
 
     public date: Date;
 
+    public blockheight?: number;
+
 
     async save(): Promise<void>{
         let id = this.id;
